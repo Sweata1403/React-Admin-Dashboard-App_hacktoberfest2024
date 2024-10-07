@@ -11,9 +11,9 @@ import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
-import CategoryIcon from '@mui/icons-material/Category';
-import LoyaltyIcon from '@mui/icons-material/Loyalty';
+import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
+import CategoryIcon from "@mui/icons-material/Category";
+import LoyaltyIcon from "@mui/icons-material/Loyalty";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
@@ -62,10 +62,10 @@ const Sidebar = () => {
         "& .pro-menu-item.active": {
           color: "#6870fa !important",
         },
-        height: "100vh", 
-        position: "sticky", 
-        top: 0, 
-        overflowY: "auto", 
+        height: "100vh",
+        position: "sticky",
+        top: 0,
+        overflowY: "auto",
       }}
     >
       <ProSidebar collapsed={isCollapsed} width="235px">
@@ -73,23 +73,25 @@ const Sidebar = () => {
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? (
-              <img
-                alt="profile-user"
-                width="40px" 
-                height="40px"
-                src={`../../assets/user.png`}
-                style={{ cursor: "pointer", borderRadius: "20%" }}
-              />
-            ) : (
-              <img
-              alt="profile-user"
-              width="40px" 
-              height="40px"
-              src={`../../assets/user.jpg`}
-              style={{ cursor: "pointer", borderRadius: "20%" }}
-            />
-            )}
+            icon={
+              isCollapsed ? (
+                <img
+                  alt="profile-user"
+                  width="40px"
+                  height="40px"
+                  src={`../../assets/user.jpg`}
+                  style={{ cursor: "pointer", borderRadius: "20%" }}
+                />
+              ) : (
+                <img
+                  alt="profile-user"
+                  width="40px"
+                  height="40px"
+                  src={`../../assets/user.jpg`}
+                  style={{ cursor: "pointer", borderRadius: "20%" }}
+                />
+              )
+            }
             style={{
               margin: "10px 0 20px 0",
               color: colors.grey[100],
@@ -192,7 +194,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            
+
             <Typography
               variant="h6"
               color={colors.grey[300]}
