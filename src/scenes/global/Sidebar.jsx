@@ -355,7 +355,7 @@ const Sidebar = () => {
                   width: "40px",
                   borderRadius: "50%",
                   cursor: "pointer",
-                  border: "1px solid white",
+                  border: "1px solid #09e076",
                 }}
               />
             }
@@ -393,7 +393,7 @@ const Sidebar = () => {
                     cursor: "pointer",
                     borderRadius: "50%",
                     objectFit: "cover",
-                    border: "2px solid white",
+                    border: "2px solid #09e076",
                   }}
                 />
               </Box>
