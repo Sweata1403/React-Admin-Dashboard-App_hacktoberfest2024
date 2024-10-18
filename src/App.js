@@ -15,6 +15,7 @@ import Geography from "./scenes/geography";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Calendar from "./scenes/calendar/calendar";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -28,7 +29,8 @@ function App() {
           <Sidebar isSidebar={isSidebar} />
           <div style={{ flexGrow: 1, overflowY: "auto" }}>
             <Topbar setIsSidebar={setIsSidebar} />
-            <main className="content" style={{ padding: "20px" }}>
+            <ScrollTop />
+            <main className="content" style={{ padding: "20px" }} id="app-main">
               <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/team" element={<Team />} />
